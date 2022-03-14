@@ -22,7 +22,8 @@ https://linuxhostsupport.com/blog/how-to-install-python-3-9-on-ubuntu-20-04/ (Go
 
 # Pre-requisites:
 ```bash
-pip3 intall boto3
+pip3 install boto3
+pip3 install xlsxwriter
 ```
 
 # Deploy:
