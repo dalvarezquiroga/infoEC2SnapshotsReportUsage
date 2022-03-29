@@ -296,7 +296,7 @@ def obtain_all_results():
 
     for snapshot in get_all_snapshots():
         iId, aMI = parse_description(snapshot['Description'])
-        lsst = (f"{snapshot['SnapshotId']}|{snapshot['Encrypted']}|{snapshot['Description']}|{snapshot['StartTime']}|{snapshot['VolumeId']}|{snapshot['VolumeSize']}|{volume_exists(snapshot['VolumeId'])}|{iId}|{get_instance_name(iId)}|{instance_exists(iId)}|{iId}|{image_exists(aMI)}")
+        lsst = (f"{snapshot['SnapshotId']}|{snapshot['Encrypted']}|{snapshot['Description']}|{snapshot['StartTime']}|{snapshot['VolumeId']}|{snapshot['VolumeSize']}|{volume_exists(snapshot['VolumeId'])}|{iId}|{get_instance_name(iId)}|{instance_exists(iId)}|{aMI}|{image_exists(aMI)}")
         details.append(lsst.split('|'))
 
     return details
